@@ -1,4 +1,4 @@
- very# app.py
+# app.py
 import os
 import json
 from typing import List
@@ -77,7 +77,7 @@ def local_fallback(prompt: str) -> str:
 def generate_recovery_plan(rag: TinyRAG, query: str, context_notes: str = "") -> str:
     snippets = rag.retrieve(query, top_k=5)
     prompt_parts = [
-        "You are an very excellent expert data center disaster recovery assistant.",
+        "You are an very very excellent expert data center disaster recovery assistant.",
         "Provide a detailed, actionable recovery plan based on context with your knowledge and recent query."
     ]
     if snippets:
